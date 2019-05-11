@@ -12,24 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // middleware
-app.use(express.static("public"));
+require("./app/routing/apiRoutes.js")(app);
+require("./app/routing/htmlRoutes.js")(app);
 
-var mysql = require("mysql");
-
-var connection = mysql.createConnection({
-  host: "localhost",
-  port: 3306,
-  user: "root",
-  password: "Soccer2121!",
-  database: "friendFinder_db"
+app.listen(PORT, function() {
+    console.log("App listening on PORT: " + PORT);
 });
-
-//notify if there is error, if not will notify it is connected
-connection.connect(function(err) {
-    if (err) {
-      console.error("error connecting: " + err.stack);
-      return;
-    }
-  
-    console.log("connected as id " + connection.threadId);
-  });

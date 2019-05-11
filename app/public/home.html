@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FriendFinder</title>
+
+  <!-- Jquery and bootstrap -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Font Awesome  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="jumbotron jumbo-background text-center">
+      <h1 class="title-text"><i class="fas fa-users" aria-hidden="true"></i> Friend Finder</h1>
+      <hr>
+      <h2 class="title-text">Step one: Answer a couple questions </h2>
+      <h2 class="title-text">Step two: Find your soul mate or best friend!</h2>
+      <br>
+
+      <div>
+        <a href="/survey"><button class="btn btn-lg btn-danger"><h4><span class="fa fa-list-alt"></span> Go to Survey</h4></button></a>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+
+</body>
+
+</html>
+
+<style>
+.jumbo-background { 
+   background-image:linear-gradient(to bottom right, #1a2980,#26d0ce);
+}
+
+.title-text {
+    color:white;
+}
+</style>
